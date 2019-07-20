@@ -1,4 +1,10 @@
-.footer-contact{
+.footer-contact {
+
+    @media (max-width: 1060){
+        .contact-logo {
+            display: none;
+        }
+    }
 
     &__inner {
         display: flex;
@@ -46,12 +52,12 @@
         background-position: center;
         margin-left: 10px;
     }
-    .generate-socials('facebook');
-    .generate-socials('twitter');
-    .generate-socials('yelp', 'yelp-symbol');
-    .generate-socials('instagram');
-    .generate-socials('google', 'google-plus');
-    .generate-socials('pinterest');
+    .generate-socials(facebook);
+    .generate-socials(twitter);
+    .generate-socials(yelp, yelp-symbol);
+    .generate-socials(instagram);
+    .generate-socials(google, google-plus);
+    .generate-socials(pinterest);
 
     .facebook-social {
         margin-left: 0px;

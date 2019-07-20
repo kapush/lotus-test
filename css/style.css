@@ -80,6 +80,24 @@ p {
   line-height: 0;
   margin-left: 3px;
 }
+.arrow {
+  position: absolute;
+  bottom: 50px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  line-height: 1;
+  color: #3eae5f;
+}
+.arrow-right {
+  width: 30px;
+  height: 10px;
+  margin-left: 5px;
+  background-image: url(https://cdn.makespace.com/s/img/ws/right-arrow-short.svg?22ddeeb3bb8b);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .topbar {
   width: 100%;
   height: 100px;
@@ -172,15 +190,16 @@ p {
 .intro-title {
   margin-bottom: calc(16px * 1.5 * 1.5);
   text-align: center;
-  font-size: 3.6px;
-  line-height: 1.15;
-  letter-spacing: 0.2px;
+  font-size: 44.4px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
   color: #1b532d;
   font-weight: 300;
 }
 @media (max-device-width: 0.8) {
   .intro-title {
-    font-size: 2.88px;
+    font-size: 35.52px;
   }
 }
 .search-box--hero-unit .search:before {
@@ -247,6 +266,20 @@ input[type="search"] {
   padding: 60px 0 0;
   text-align: center;
 }
+.container-articles__title {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 60px;
+  color: #0f3916;
+  font-size: 39.6px;
+  line-height: 1.15;
+  letter-spacing: 0.2px;
+}
+@media (max-device-width: 0.8) {
+  .container-articles__title {
+    font-size: 31.68px;
+  }
+}
 .container-articles .articles {
   position: relative;
   width: 100%;
@@ -261,34 +294,48 @@ input[type="search"] {
   flex-wrap: wrap;
   list-style: none;
 }
-@media (max-width: 600px) {
-  .container-articles .articles {
-    display: block;
-    width: 100%;
-    margin: 45px 45px;
-  }
-}
 .container-articles .articles-item {
   position: relative;
   align-items: center;
   width: calc(33.333% - 45px);
-  background-color: #fff;
   margin-right: 45px;
   margin-bottom: 45px;
   box-sizing: border-box;
   padding: 32px;
   text-align: center;
   vertical-align: top;
+  background-color: #fff;
 }
-@media (max-width: 600px) {
+@media (max-width: 1070px) {
   .container-articles .articles-item {
-    width: 100%;
-    margin: 45px 45px;
+    width: calc(50% - 25px);
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+  .container-articles .articles-item:nth-child(2n) {
+    margin-right: 0;
   }
 }
-.container-articles .articles-item:nth-child(3n),
+@media (max-width: 500px) {
+  .container-articles .articles-item {
+    display: block;
+    width: 100%;
+    margin: 45px auto;
+  }
+}
+@media (min-width: 1070px) {
+  .container-articles .articles-item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
 .container-articles .articles-item:last-child {
   margin-right: 0;
+}
+.container-articles .articles-item__container {
+  width: 100%;
+  max-height: 190px;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 .layout__footer {
   -webkit-box-flex: 0;
@@ -328,6 +375,11 @@ input[type="search"] {
   background-color: #1b532d;
   background-image: linear-gradient(257deg, #19361d, #165420);
 }
+@media (max-width: 1060) {
+  .footer-contact .contact-logo {
+    display: none;
+  }
+}
 .footer-contact__inner {
   display: flex;
   justify-content: space-between;
@@ -364,22 +416,22 @@ input[type="search"] {
   background-position: center;
   margin-left: 10px;
 }
-.footer-contact .'facebook'-social {
+.footer-contact .facebook-social {
   background-image: url('https://cdn.makespace.com/s/img/ws/facebook.svg?22ddeeb3bb8b');
 }
-.footer-contact .'twitter'-social {
+.footer-contact .twitter-social {
   background-image: url('https://cdn.makespace.com/s/img/ws/twitter.svg?22ddeeb3bb8b');
 }
-.footer-contact .'yelp'-social {
+.footer-contact .yelp-social {
   background-image: url('https://cdn.makespace.com/s/img/ws/yelp-symbol.svg?22ddeeb3bb8b');
 }
-.footer-contact .'instagram'-social {
+.footer-contact .instagram-social {
   background-image: url('https://cdn.makespace.com/s/img/ws/instagram.svg?22ddeeb3bb8b');
 }
-.footer-contact .'google'-social {
+.footer-contact .google-social {
   background-image: url('https://cdn.makespace.com/s/img/ws/google-plus.svg?22ddeeb3bb8b');
 }
-.footer-contact .'pinterest'-social {
+.footer-contact .pinterest-social {
   background-image: url('https://cdn.makespace.com/s/img/ws/pinterest.svg?22ddeeb3bb8b');
 }
 .footer-contact .facebook-social {
