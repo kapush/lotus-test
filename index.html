@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Makespace</title>
+
+    <link rel="stylesheet" href="css/style.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    
+    <script src="js/articles.js" defer></script>
+
+</head>
+
+<body class="community-enabled">
+
+<div class="layout">
+    <div class="layout__head">
+        <header class="topbar container " data-topbar>
+            <div class="container-inner">
+                <div class="topbar__inner">
+                    <div class="topbar__col clearfix">
+                        <div class="logo-wrapper">
+                            <div class="logo">
+                                <a title="Home" href="/hc/en-us">
+                                </a> 
+                            </div>
+                            <p class="help-center-name">Help Center</p>
+                        </div>
+                    </div>
+                    <div class="topbar__col topbar__menu">
+                        <div class="topbar__collapse" data-menu>
+                            <div class="topbar__controls">
+                                <a class="btn btn--topbar submit-a-request" href="/hc/en-us/requests/new">Submit a request</a> 
+                                <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Flotus-test.zendesk.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="layout__main">
+        <main role="main">
+            <div class="hero-unit" data-hero-unit>
+                <div class="hero-bg" data-hero-bg ></div>
+                <div class="container-inner search-box search-box--hero-unit" data-search-box>
+                <div class="intro-title">How can we help?</div>
+                    <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search..." autocomplete="off" aria-label="Search..." />
+                        <input class="btn" type="submit" name="commit" value="Search" /></form>
+                </div>
+            </div>
+            <div class="container-articles">
+                <ul id="articles" class="articles"></ul>
+            </div>
+        </main>
+    </div>
+
+    <div class="layout__footer">
+
+        <div class="footer-contact container">
+            <div class="footer-contact__inner container-inner">
+                <div class="footer-contact__col">
+                    <img src="https://cdn.makespace.com/s/img/ws/call.svg" class="contact-logo" alt="Phone">
+                    <div class="contact-text">
+                    <p class="contact-mobile-title contact-title big-subtitle">
+                        Call Us
+                    </p>
+                    <p class="contact-mobile-subtitle contact-subtitle green big-subtitle">
+                        <a class=" ganumber js-link-tracking" id="tap-to-call" href="tel:855-758-3293">855-758-3293</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="footer-contact__col">
+                    <img src="https://cdn.makespace.com/s/img/ws/email.svg" class="contact-logo" alt="Email">
+                    <div class="contact-text">
+                        <p class="contact-mail-title contact-title big-subtitle">
+                            Email Us
+                        </p>
+                        <p class="contact-mail-subtitle contact-subtitle green big-subtitle">
+                            <a href="mailto:support@makespace.com">support@makespace.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-contact__col">
+                    <img src="https://cdn.makespace.com/s/img/ws/connect.svg" class="footer-contact-logo" alt="Connect">
+                    <div class="contact-text">
+                        <p class="contact-connect-title contact-title big-subtitle">
+                            Connect with us
+                        </p>
+                        <div class="contact-connect-subtitle contact-subtitle green big-subtitle">
+                            <a  href="https://www.facebook.com/MakeSpaceCom" target="_blank">
+                            <span class="contact-social-logo facebook-social inline"></span>
+                            </a>
+                            <a  href="https://twitter.com/makespace" target="_blank">
+                            <span class="contact-social-logo twitter-social inline"></span>
+                            </a>
+                            <a  href="https://www.yelp.com/biz/makespace-new-york" target="_blank">
+                            <span class="contact-social-logo yelp-social inline"></span>
+                            </a>
+                            <a  href="https://instagram.com/makespace/" target="_blank">
+                            <span class="contact-social-logo instagram-social inline"></span>
+                            </a>
+                            <a  href="https://plus.google.com/+Makespace" target="_blank">
+                            <span class="contact-social-logo google-social inline"></span>
+                            </a>
+                            <a  href="https://www.pinterest.com/GetMakeSpace/" target="_blank">
+                            <span class="contact-social-logo pinterest-social inline"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer container">
+                
+            <div class="container-inner footer__inner">
+                <div class="footer__col copyright">
+                    <p>&copy; Makespace</p>
+        
+                    <p>Theme by <a href="https://www.lotusthemes.com" target="_blank">Lotus Themes</a></p>
+        
+                </div>
+            
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

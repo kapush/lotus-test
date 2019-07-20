@@ -1,0 +1,13 @@
+.container {
+    padding: 0 15px 0;
+    
+    @media (min-width: 768px){
+        padding: 0 calc(15px * 2) 0;
+    }
+
+    &-inner {
+        max-width: @max-width;
+
+        margin: 0 auto;
+    }
+}

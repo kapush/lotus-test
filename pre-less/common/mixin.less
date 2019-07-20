@@ -1,0 +1,14 @@
+.set-font(@font-change: 1; @mobile-change: 0.8) {
+    font-size: @font-size-base * @font-change;
+
+    @media (max-device-width: @mobile-change){
+        font-size: @font-size-base * @font-change * @mobile-change;
+    }
+}
+
+.generate-socials(@social-name; @url-part: @social-name){
+
+    .@{social-name}-social {
+        background-image: url('https://cdn.makespace.com/s/img/ws/@{url-part}.svg?22ddeeb3bb8b');
+    }
+}

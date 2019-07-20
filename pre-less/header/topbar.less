@@ -1,0 +1,27 @@
+.topbar {
+    width: 100%;
+    height: 100px;
+
+    margin-bottom: calc(16px * 1.5);
+
+    @media (min-width: 768px) {
+        margin-bottom: calc(16px * 1.5 * 2);
+    }
+    
+    color: @color-white;
+    background-color: @color-dark-green;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    &__col{
+        position: relative;
+        padding: calc(16px * 1.5 / 2) 0;
+    }
+}

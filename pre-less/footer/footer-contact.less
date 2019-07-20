@@ -1,0 +1,59 @@
+.footer-contact{
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    background-color: @color-green;    
+    background-image: linear-gradient(257deg,#19361d,#165420);
+
+    &__col {
+        max-width: 400px;
+        width: 100%;
+        
+        padding: 0 0 0 50px;
+        margin: 40px 0;
+
+        border-left: 1px solid #fff;
+        
+        .contact-text {
+            display: inline-block;
+            color: white;
+            padding-left: 25px;
+            word-wrap: break-word;
+
+            a {
+                color: #3eae5f;
+            }
+            .contact-subtitle {
+                color: #3eae5f;
+                margin: 10px 0 0;
+            }
+        }
+
+        &:first-child {
+            border: none;
+        }
+    }
+
+    .contact-social-logo {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 10px;
+    }
+    .generate-socials('facebook');
+    .generate-socials('twitter');
+    .generate-socials('yelp', 'yelp-symbol');
+    .generate-socials('instagram');
+    .generate-socials('google', 'google-plus');
+    .generate-socials('pinterest');
+
+    .facebook-social {
+        margin-left: 0px;
+    }
+}

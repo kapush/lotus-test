@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+
+    background-color: @color-white;
+
+    font-family: @font-family;
+    font-size: set-font(1.2);
+    line-height: 1.5;
+    color: @color-green;
+    
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+        
+.inline {
+    display: inline-block;
+}
+
+*, 
+*:before, 
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    &:before, 
+    &:after {
+        display: table;
+        content: "";
+    }
+    
+    &:after {
+        clear: both;
+    }
+}

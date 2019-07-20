@@ -1,0 +1,32 @@
+.lines {
+    position: relative;
+
+    &,
+    &:before, 
+    &:after {
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        
+        background: #fff;
+        border-radius: 2px;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    &-button {
+        @media (min-width: 768px){
+            display: none;
+        }
+        padding: 15px 7.5px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+}
