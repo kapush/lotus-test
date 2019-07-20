@@ -15,13 +15,14 @@ renderArticles = (articles) => {
     container.innerHTML = articles.map(article => `
     <li class="articles-item">
         <div class="articles-item__container">
-            <h3>${article.id} ${article.title}</h3>
-            <div>${article.body}</div>
+            <h3 class="articles-item__title">${article.id} ${article.title}</h3>
+            <div class="articles-item__body">${article.body}</div>
         </div>
-        <a class="arrow" href="/features">Learn more <div class="arrow-right inline"></div></a>
+        <a id="arrow" class="arrow" href="#">Learn more <div class="arrow__right inline"></div></a>
     </li>
         `
     ).join('');
+    container.closest('div').style.display = "block";
 }
 
 prepareData = (data) => {

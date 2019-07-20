@@ -4,7 +4,7 @@
 
     padding: 15% 15px 10%;
 
-    @media (min-width: 768px) {
+    @media (min-width: @mobile-break-md) {
         margin-top: calc((16px * 1.5 * -2) - 1px);
         padding-bottom: 5%;
     }
@@ -62,7 +62,7 @@
 .search-box--hero-unit .search:before {
     left: 20px;
     margin-top: -11px;
-    font-size: 22px;
+    .set-font(1.8);//22
 }
 
 .search:before {
@@ -72,7 +72,7 @@
     display: inline-block;
     margin-top: -9px;
     font-family: "Font Awesome 5 Free";
-    font-size: 18px;
+    .set-font(1.5);//18
     font-style: normal;
     font-weight: 900;
     line-height: 1;
@@ -84,12 +84,12 @@
 
 
 .search-box--hero-unit #query {
-    @media (min-width: 992px) {
+    @media (min-width: @mobile-break-lg) {
         height: 60px;
     }
     height: 50px;
     padding: 0 55px;
-    font-size: 20px;
+    .set-font(1.6);//20
     border-color: #fff;
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-transition: border 0.3s ease, background-color 0.3s ease;
@@ -104,7 +104,7 @@ input[type="search"] {
     width: 100%;
     height: auto;
     padding: 6px 12px;
-    font-size: 16px;
+    .set-font(1.3);//16
     line-height: 1.5;
     color: #55595c;
     background-color: #fff;
@@ -120,4 +120,5 @@ input[type="search"] {
     padding-right: calc(12px * 2);
     padding-left: calc(12px * 2);
     font-family: @font-family;
+    cursor: pointer;
 }
