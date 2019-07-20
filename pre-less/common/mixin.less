@@ -1,7 +1,7 @@
-.set-font(@font-change: 1; @mobile-change: 0.8) {
+.set-font(@font-change: 1; @mobile-change: 0.6) {
     font-size: @font-size-base * @font-change;
 
-    @media (max-device-width: @mobile-break-md){
+    @media (max-width: @mobile-break-md){
         font-size: @font-size-base * @font-change * @mobile-change;
     }
 }
