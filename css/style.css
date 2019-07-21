@@ -14,7 +14,7 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    font-size: 8.64px;
+    font-size: 12.96px;
   }
 }
 a {
@@ -78,7 +78,7 @@ input {
 }
 @media (max-width: 768px) {
   .btn {
-    font-size: 7.2px;
+    font-size: 10.8px;
   }
 }
 .login {
@@ -95,7 +95,7 @@ input {
 }
 @media (max-width: 768px) {
   .login {
-    font-size: 7.2px;
+    font-size: 10.8px;
   }
 }
 .arrow {
@@ -110,7 +110,7 @@ input {
 }
 @media (max-width: 768px) {
   .arrow {
-    font-size: 9px;
+    font-size: 13.5px;
   }
 }
 .arrow__right {
@@ -167,7 +167,7 @@ input {
 }
 @media (max-width: 768px) {
   .help-center-name {
-    font-size: 7.92px;
+    font-size: 11.88px;
   }
 }
 .hero-unit {
@@ -232,7 +232,7 @@ input {
 }
 @media (max-width: 768px) {
   .search-box--hero-unit .search:before {
-    font-size: 12.96px;
+    font-size: 19.44px;
   }
 }
 .search:before {
@@ -253,7 +253,7 @@ input {
 }
 @media (max-width: 768px) {
   .search:before {
-    font-size: 10.8px;
+    font-size: 16.2px;
   }
 }
 .search-box--hero-unit #query {
@@ -272,7 +272,7 @@ input {
 }
 @media (max-width: 768px) {
   .search-box--hero-unit #query {
-    font-size: 11.52px;
+    font-size: 17.28px;
   }
 }
 input[type="search"] {
@@ -293,12 +293,11 @@ input[type="search"] {
 }
 @media (max-width: 768px) {
   input[type="search"] {
-    font-size: 9.36px;
+    font-size: 14.04px;
   }
 }
 .search-box--hero-unit input[type="submit"] {
   display: inline-block;
-  height: 60px;
   margin-left: 16px;
   padding-right: calc(12px * 2);
   padding-left: calc(12px * 2);
@@ -321,7 +320,7 @@ input[type="search"] {
 }
 @media (max-width: 768px) {
   .container-articles__title {
-    font-size: 23.76px;
+    font-size: 35.64px;
   }
 }
 .container-articles .articles {
@@ -337,6 +336,11 @@ input[type="search"] {
   margin-top: 40px;
   margin-bottom: 0;
   padding: 0 60px;
+}
+@media (max-width: 768px) {
+  .container-articles .articles {
+    margin-top: 0;
+  }
 }
 .container-articles .articles-item {
   position: relative;
@@ -367,7 +371,7 @@ input[type="search"] {
   .container-articles .articles-item {
     display: block;
     width: 100%;
-    margin: 45px auto;
+    margin: 20px auto;
   }
 }
 @media (min-width: 1070px) {
@@ -384,7 +388,7 @@ input[type="search"] {
 .container-articles .articles-item__title {
   margin: 0;
   padding-bottom: 30px;
-  font-size: 24px;
+  font-size: 20.4px;
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: 0.2px;
@@ -392,12 +396,12 @@ input[type="search"] {
 }
 @media (max-width: 768px) {
   .container-articles .articles-item__title {
-    font-size: 14.4px;
+    font-size: 18.36px;
   }
 }
 .container-articles .articles-item__body {
   line-height: 1.4;
-  font-size: 15.6px;
+  font-size: 13.92px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -406,7 +410,12 @@ input[type="search"] {
 }
 @media (max-width: 768px) {
   .container-articles .articles-item__body {
-    font-size: 9.36px;
+    font-size: 12.528px;
+  }
+}
+@media (max-width: 768px) {
+  .container-articles {
+    padding-top: 20px;
   }
 }
 .layout__footer {
@@ -424,7 +433,7 @@ input[type="search"] {
 }
 @media (max-width: 768px) {
   .footer {
-    font-size: 8.352px;
+    font-size: 12.528px;
   }
 }
 .footer__inner {
