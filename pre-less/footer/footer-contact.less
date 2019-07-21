@@ -1,7 +1,7 @@
 .footer-contact {
 
     @media (max-width: @mobile-break-lg){
-        .contact-logo {
+        .contact-logo, .footer-contact-logo {
             display: none;
         }
     }
@@ -10,6 +10,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @media(max-width: @mobile-break-md){
+            flex-direction: column;
+        }
     }
 
     background-color: @color-green;    
@@ -23,6 +27,14 @@
         margin: 40px 0;
 
         border-left: 1px solid #fff;
+
+        @media(max-width: @mobile-break-md){
+            margin: 20px 0 10px;
+            padding-bottom: 10px;
+            padding-left: 0;
+            border: none;
+
+        }
         
         .contact-text {
             display: inline-block;
